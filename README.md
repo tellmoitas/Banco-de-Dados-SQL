@@ -2,6 +2,12 @@
 
 Este livro foi escrito por Tell Moitas e pelos professores José Antônio e George Azevedo, a partir do material da disciplina de Banco de Dados, do curso superior Tecnológico de Análise e Desenvolvimento de Sistemas do IFRN - Instituto Federal do Rio Grande do Norte
 
+O e-book \(**ASIN**: B07DWCK47B\) e o livro impresso \( **ISBN:** 9781983225031\), estão disponíveis  em pré-venda na Amazon. Data prevista da publicação: 01/08/2018.
+
+![](.gitbook/assets/capa_amazon.PNG)
+
+
+
 ## José Antônio
 
 ![](http://diatinf.ifrn.edu.br/lib/exe/fetch.php?w=180&tok=76b76c&media=pessoal:jose-antonio.jpg)
