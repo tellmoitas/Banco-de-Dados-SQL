@@ -2,12 +2,15 @@
 
 Este livro foi escrito por Tell Moitas e pelos professores José Antônio e George Azevedo, com base no conteúdo da disciplina de Banco de Dados do curso graduação Tecnológica em Análise e desenvolvimento de Sistemas do IFRN - Instituto Federal do Rio Grande do Norte.
 
+Todo conteúdo é licenciado sobre a Creative Commons Attribution Non Commercial Share Alike 3.0 license. 
+
+_O código-fonte deste livro está em:_ [https://github.com/tellmoitas/Banco-de-Dados-SQL](https://github.com/tellmoitas/Banco-de-Dados-SQL)
+
 ![](.gitbook/assets/capa_amazon.PNG)
 
-O livro "Banco de Dados SQL" (**ASIN**: B07DWCK47B\) está disponível* para pré-venda na Loja Kindle [**aqui**](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660). 
+O livro "Banco de Dados SQL" \(**ASIN**: B07DWCK47B\) está disponível _para pré-venda na Loja Kindle_ [_**aqui**_](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660).
 
 O livro impresso \( **ISBN:** 9781983225031\), estará disponível em breve.
-
 
 ## José Antônio
 
