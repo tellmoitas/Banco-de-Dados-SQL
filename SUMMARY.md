@@ -1,9 +1,8 @@
 # Sumário
 ### Programação
-
-* [Pogramação](Programacao)
-    * [Recursos de Programação](Programacao/recursos-de-programacao.md)
-    * [GitBook is nice](part1/README.md#gitbook)
+[Pogramação]
+* [Recursos de Programação](Programacao/recursos-de-programacao.md)
+* [GitBook is nice](part1/README.md#gitbook)
 * [Part II](part2/README.md)
     * [We love feedback](part2/README.md#feedback)
     * [Better tools for authors](part2/README.md#tools)
