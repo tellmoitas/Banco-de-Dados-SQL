@@ -39,7 +39,7 @@ PRINT @contador
 
 **Criando a tabela de funcionário**
 
-![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1.png)
+![](../.gitbook/assets/imagem1%20%283%29.png)
 
 ```sql
 CREATE TABLE [dbo].[Funcionario](
@@ -83,7 +83,7 @@ SELECT @nome = Nome_Func FROM Funcionario
 
 **Exemplo 1**
 
-![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%281%29.png)
+![](../.gitbook/assets/imagem1.png)
 
 Se o funcionário de código 1 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%.
 
@@ -96,7 +96,7 @@ IF (SELECT Idade_Func FROM Funcionario WHERE Cod_Func =1 ) >= 50
 
 **Exemplo 2**
 
-![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%282%29.png)
+![](../.gitbook/assets/imagem1%20%282%29.png)
 
 Se o funcionário de código 3 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%; caso contrário, aplique para o funcionário um aumento salarial de 40%
 
@@ -113,7 +113,7 @@ ELSE
 
 **Exemplo 3**
 
-![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%283%29.png)
+![](../.gitbook/assets/imagem1%20%289%29.png)
 
 Se o funcionário de código 4 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%. Se não, se o funcionário de código 4 tiver uma idade entre 40 e 49 anos, aplique-lhe um aumento salarial de 40%
 
@@ -135,7 +135,7 @@ ELSE IF @idade BETWEEN 40 AND 49
 
 **Exemplo 4**
 
-![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%284%29.png)
+![](../.gitbook/assets/imagem1%20%286%29.png)
 
 * Se o funcionário de código 1 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50% e um bônus de 500 reais.
 * Se não, se o funcionário de código 1 tiver uma idade entre 40 e 49 anos, aplique-lhe um aumento salarial de 40% e um bônus de 1000 reais.
