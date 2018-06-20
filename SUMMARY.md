@@ -1,8 +1,8 @@
 # Sumário
+
+## Banco de Dados
+
 ## Programação
-[Pogramação]
-* [Recursos de Programação](Programacao/recursos-de-programacao.md)
-* [Banco de Dados](Programacao/banco-de-dados.md)
 * [Recursos de Programação](Programacao/recursos-de-programacao.md)
 * [Stored Procedures](Programacao/stored-procedures.md)
 * [Views](Programacao/views.md)
@@ -10,6 +10,7 @@
 * [Funções](Programacao/funcoes.md)
 * [Transações](Programacao/transacoes.md)
 * [Cursores](Programacao/cursores.md)
+
 ## Adminstração
 * [Paginas e Extensões](Adminstracao/paginas-e-extensoes.md)
 * [Filegroups](Adminstracao/filegroups.md)
