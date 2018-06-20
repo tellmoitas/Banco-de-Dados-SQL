@@ -1,6 +1,6 @@
 # Recursos de Programação
 
-### **Declaração de Variáveis**
+## **Declaração de Variáveis**
 
 Uma variável é uma área de memória destinada a armazenar temporariamente um ou mais valores, que serão utilizados durante a execução de um programa.
 
@@ -20,7 +20,8 @@ Declare @nome char(20), @contador int
 
 ```sql
 Declare @nome char(20), @contador int
--- Atribuindo valores constantes as variáveis 
+-- Atribuindo valores constantes as variáveis
+
 SET @nome = 'José da Silva' 
 SET @contador = 1
 ```
@@ -38,7 +39,7 @@ PRINT @contador
 
 **Criando a tabela de funcionário**
 
-![Tabela Funcionario](.gitbook/assets/imagem1.png)
+![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1.png)
 
 ```sql
 CREATE TABLE [dbo].[Funcionario](
@@ -78,11 +79,11 @@ SELECT @nome = Nome_Func FROM Funcionario
     WHERE Cod_Func = 1
 ```
 
-### **Teste de condição com o comando IF**
+## **Teste de condição com o comando IF**
 
 **Exemplo 1**
 
-![Tabela Funcionario](.gitbook/assets/imagem1%20%281%29.png)
+![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%281%29.png)
 
 Se o funcionário de código 1 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%.
 
@@ -90,12 +91,12 @@ Se o funcionário de código 1 tiver 50 anos ou mais, aplique-lhe um aumento sal
 IF (SELECT Idade_Func FROM Funcionario WHERE Cod_Func =1 ) >= 50
      UPDATE Funcionario SET
           Sal_Func = Sal_Func * 1.5
-     WHERE Cod_Func = 1            
+     WHERE Cod_Func = 1
 ```
 
 **Exemplo 2**
 
-![Tabela Funcionario](.gitbook/assets/imagem1%20%282%29.png)
+![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%282%29.png)
 
 Se o funcionário de código 3 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%; caso contrário, aplique para o funcionário um aumento salarial de 40%
 
@@ -112,7 +113,7 @@ ELSE
 
 **Exemplo 3**
 
-![Tabela Funcionario](.gitbook/assets/imagem1%20%283%29.png)
+![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%283%29.png)
 
 Se o funcionário de código 4 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50%. Se não, se o funcionário de código 4 tiver uma idade entre 40 e 49 anos, aplique-lhe um aumento salarial de 40%
 
@@ -134,7 +135,7 @@ ELSE IF @idade BETWEEN 40 AND 49
 
 **Exemplo 4**
 
-![Tabela Funcionario](.gitbook/assets/imagem1%20%284%29.png)
+![Tabela Funcionario](https://github.com/tellmoitas/Banco-de-Dados-SQL/tree/2139ca3435f3ad69e4e090584c77bb299b8e15a9/Programacao/.gitbook/assets/imagem1%20%284%29.png)
 
 * Se o funcionário de código 1 tiver 50 anos ou mais, aplique-lhe um aumento salarial de 50% e um bônus de 500 reais.
 * Se não, se o funcionário de código 1 tiver uma idade entre 40 e 49 anos, aplique-lhe um aumento salarial de 40% e um bônus de 1000 reais.
@@ -168,10 +169,10 @@ ELSE
      End
 UPDATE Funcionario
      SET Sal_Func = Sal_Func * @aumento, Bonus_Func = @bonus 
-WHERE Cod_Func = 1        
+WHERE Cod_Func = 1
 ```
 
-### **Teste de condição com o comando Select Case**
+## **Teste de condição com o comando Select Case**
 
 Este comando analisa o valor de uma variável ou coluna de tabela com relação a uma lista de condições e retorna um dos resultados dessa lista. O comando Case pode ter dois formatos:
 
@@ -238,7 +239,7 @@ SELECT *,
 FROM Funcionario
 ```
 
-### **Laço de Repetição - While**
+## **Laço de Repetição - While**
 
 WHILE condição\_1 = verdadeiro
 
@@ -270,7 +271,7 @@ begin
 end
 ```
 
- Leia o salário do funcionário de código 1 e aplique-lhe um bônus salarial nestas condições: desconte 10% do salário desse funcionário até que o valor obtido como resposta seja igual ou inferior a 1000 reais. Se o valor do bônus calculado mais o valor do bônus armazenado for menor do que 1000 reais, atribua ao bônus o valor de 1000 reais e encerre o processo.
+Leia o salário do funcionário de código 1 e aplique-lhe um bônus salarial nestas condições: desconte 10% do salário desse funcionário até que o valor obtido como resposta seja igual ou inferior a 1000 reais. Se o valor do bônus calculado mais o valor do bônus armazenado for menor do que 1000 reais, atribua ao bônus o valor de 1000 reais e encerre o processo.
 
 ```sql
 DECLARE @salario decimal(10,2), @bonus decimal(10,2)
@@ -291,6 +292,4 @@ UPDATE Funcionario
                     SET Bonus_Func = @bonus
 WHERE Cod_Func = 1
 ```
-
-
 

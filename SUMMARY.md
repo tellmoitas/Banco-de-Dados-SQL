@@ -1,24 +1,26 @@
-# Sumário
+# Table of contents
 
-## Banco de Dados
+* [Banco de Dados SQL](README.md)
 
 ## Programação
-* [Recursos de Programação](Programacao/recursos-de-programacao.md)
-* [Stored Procedures](Programacao/stored-procedures.md)
-* [Views](Programacao/views.md)
-* [Triggers](Programacao/triggers.md)
-* [Funções](Programacao/funcoes.md)
-* [Transações](Programacao/transacoes.md)
-* [Cursores](Programacao/cursores.md)
+
+* [Recursos de Programação](programacao/recursos-de-programacao.md)
+* [Stored Procedures](programacao/stored-procedures.md)
+* [Views](programacao/views.md)
+* [Triggers](programacao/triggers.md)
+* [Funções](programacao/funcoes.md)
+* [Transações](programacao/transacoes.md)
+* [Cursores](programacao/cursores.md)
 
 ## Adminstração
-* [Paginas e Extensões](Adminstracao/paginas-e-extensoes.md)
-* [Filegroups](Adminstracao/filegroups.md)
-* [Índices](Adminstracao/indices.md)
-* [Tunning](Adminstracao/tunning.md)
-* [Fulltext](Adminstracao/fulltext.md)
-* [Profiler](Adminstracao/profiler.md)
-* [Backup e Restauração](Adminstracao/backup-e-restauracao.md)
-* [Agendando Tarefas](Adminstracao/agendando-tarefas.md)
-* [Segurança](Adminstracao/seguranca.md)
+
+* [Paginas e Extensões](adminstracao/paginas-e-extensoes.md)
+* [Filegroups](adminstracao/filegroups.md)
+* [Índices](adminstracao/indices.md)
+* [Tunning](adminstracao/tunning.md)
+* [Fulltext](adminstracao/fulltext.md)
+* [Profiler](adminstracao/profiler.md)
+* [Backup e Restauração](adminstracao/backup-e-restauracao.md)
+* [Agendando Tarefas](adminstracao/agendando-tarefas.md)
+* [Segurança](adminstracao/seguranca.md)
 
