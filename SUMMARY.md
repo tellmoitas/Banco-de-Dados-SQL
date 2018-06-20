@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Autores](README.md)
 * [Part I](part-i/README.md)
   * [Writing is nice](part-i/writing-is-nice.md)
   * [GitBook is nice](part-i/gitbook-is-nice.md)
