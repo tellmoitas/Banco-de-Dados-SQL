@@ -1,8 +1,8 @@
 # Índice
 
 * [Banco de Dados SQL](part1/README.md    
-* [Programação](part2/README.md)
-   * [Recursos de Programação](part2/recursos-de-programacao.md)
+* [Programação](README.md)
+   * [Recursos de Programação](recursos-de-programacao.md)
    * [Stored Procedures](part2/untitled.md)
    * [Views](part2/views.md)
    * [Triggers]part2/(untitled-1.md)
