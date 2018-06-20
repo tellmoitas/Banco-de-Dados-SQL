@@ -19,6 +19,6 @@
 
 ## Tell Moitas
 
-[![Foto de Tell Moitas ](https://avatars2.githubusercontent.com/u/16861645?s=300&v=4)](https://avatars2.githubusercontent.com/u/16861645?s=300&v=4)
+[![Foto de Tell Moitas ](https://avatars2.githubusercontent.com/u/16861645?s=280&v=4)](https://avatars2.githubusercontent.com/u/16861645?s=280&v=4)
 
 * E-mail: [tell.moitas@escolar.ifrn.edu.br](mailto:tell.moitas@escolar.ifrn.edu.br)
