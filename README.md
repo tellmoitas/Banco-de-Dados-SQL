@@ -4,7 +4,7 @@ Este livro foi escrito por Tell Moitas e pelos professores José Antônio e Geor
 
 Todo conteúdo é licenciado sobre a Creative Commons Attribution Non Commercial Share Alike 3.0 license. 
 
-_O código-fonte deste livro está em:_ [https://github.com/tellmoitas/Banco-de-Dados-SQL](https://github.com/tellmoitas/Banco-de-Dados-SQL)
+_O código-fonte deste livro está em:_ [**https://github.com/tellmoitas/Banco-de-Dados-SQL**](https://github.com/tellmoitas/Banco-de-Dados-SQL)
 
 ![](.gitbook/assets/capa_amazon.PNG)
 
