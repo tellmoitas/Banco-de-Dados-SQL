@@ -215,11 +215,15 @@ RAISERROR(14027,16,1’Tab_Teste’)
 
 2.     Enviar uma mensagem colocada na tabela do sistema sysmessages pelo usuário. O primeiro passo é acrescentar esta mensagem à tabela sysmessages:
 
-Exec sp\_AddMessage 50001, 16, ‘O usuário %s cometeu um erro’
+```sql
+Exec sp_AddMessage 50001, 16, ‘O usuário %s cometeu um erro’
+```
 
 Depois execute o RAISERROR:
 
-RAISERROR\(50001, 16,1, ‘José Antônio’\)
+```sql
+RAISERROR(50001, 16,1, ‘José Antônio’)
+```
 
 **Importante:**
 
@@ -227,17 +231,17 @@ RAISERROR\(50001, 16,1, ‘José Antônio’\)
 2. As severidades de 0 a 18 podem ser utilizada por qualquer usuário.
 3. As severidades de 19 a 25 podem ser utilizadas apenas pelos administradores do sistema. Essas severidades são consideradas erros fatais. Se ocorrer um erro fatal, a conexão é encerrada, depois que ele receber a mensagem.
 
-**Nota**: as Procedimento Armazenado sempre melhoram a performance de processamento dos dados do sistema em comparação com a execução de queries avulsas.
+**Nota**: Os procedimentos armazenados, sempre melhoram a performance de processamento dos dados do sistema, em comparação com a execução de queries avulsas.
 
 Nesse exercício vamos fazer uma implementação completa de um caso de uso. O caso de uso escolhido, por fins didáticos, foi a manutenção no castrado de clientes.
 
 Nos slides seguintes teremos todos os passos para essa implementação, com diagramas de caso de uso, detalhamento, diagrama de classe, diagrama de seqüência, script do banco de dados e implementação propriamente dita em java.
 
-Diagrama de Casos de uso
+### Diagrama de Casos de uso
 
 ![](file:////Users/tell/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image004.png)
 
-Detalhamento – CUS01
+#### Detalhamento – CUS01
 
 Caso de Uso: **Cadastrar Cliente**\(CSU01\)
 
@@ -261,7 +265,9 @@ Caso de Uso: **Cadastrar Cliente**\(CSU01\)
 
 1- O sistema reporta esse fato ao usuário e volta ao passo 2.
 
-Detalhamento – CUS02
+#### 
+
+#### Detalhamento – CUS02
 
 1- O usuário abre o formulário de manutenção do cliente.
 
@@ -277,7 +283,9 @@ Fluxo Alternativo\(4\): Se oorreu erro.
 
 1- O sistema reporta esse fato ao usuário, exibindo o erro ocorrido e volta ao passo 2.
 
-Detalhamento – CUS03
+#### 
+
+#### Detalhamento – CUS03
 
 Caso de Uso: Excluir Cliente\(CSU03\)
 
@@ -303,7 +311,9 @@ Fluxo Alternativo\(5\): Ocorreu erro.
 
 1- O sistema reporta esse fato ao usuário e exibe o erro ocorrido ao usuário e volta ao passo 2
 
-Detalhamento – CUS04
+
+
+#### Detalhamento – CUS04
 
 Caso de Uso: Localizar Cliente\(CSU04\)
 
@@ -329,6 +339,8 @@ Fluxo Alternativo\(4\): Ocorreu erro.
 
 1- O sistema reporta esse fato ao usuário e exibe o erro ocorrido ao usuário e volta ao passo 2
 
+
+
 Diagrama de Classe
 
 ![](file:////Users/tell/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image006.png)
@@ -349,260 +361,170 @@ Diagrama de Seqüência – CSU04
 
 ![](file:////Users/tell/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image014.png)
 
-Código Java da Classe Cliente
+#### Código Java da Classe Cliente
 
+```java
 public class Cliente
-
 {
-
    private int clienteid;
-
    private int nome;
-
    private int sobrenome;
-
    private int endereco;
-
    private int cidade;
-
    private int estado;
-
    private int cep;
-
    private int idpais;
-
    private int email;
-
-public Cliente\(\) { }
-
-   public void InserirCliente\(\) { }
-
-   public void atualizarCliente\(\) { }
-
-   public void ExcluirCliente\(\) { }
-
-   public void LocalizarCliente\(\) { }
-
+public Cliente() { }
+   public void InserirCliente() { }
+   public void atualizarCliente() { }
+   public void ExcluirCliente() { }
+   public void LocalizarCliente() { }
 }
+```
+
+
 
 Script do Banco de Dados
 
-/\* Criando a tabela cliente no banco de dados Teste \*/
-
-IF EXISTS \(SELECT name FROM sysobjects WHERE name = 'Cliente' AND Type= 'U'\)
-
+```sql
+/* Criando a tabela cliente no banco de dados Teste */
+IF EXISTS (SELECT name FROM sysobjects WHERE name = 'Cliente' AND Type= 'U')
             DROP TABLE Cliente
-
 Go
-
-CREATE TABLE Cliente \(
-
+CREATE TABLE Cliente (
             ClienteID int not null primary key,
-
-            Nome varchar\(35\) not null,
-
-            SobreNome varchar\(15\) not null,
-
-            Endereco varchar\(50\) not null,
-
-            Cidade varchar\(25\) not null,
-
-            Estado varchar\(2\)
-
-                       check \(Estado IN \('RN', 'PB', 'CE', 'PE', 'BA', 'MA', 'AL', 'SE'\)\),
-
-            CEP varchar\(8\) not null,
-
+            Nome varchar(35) not null,
+            SobreNome varchar(15) not null,
+            Endereco varchar(50) not null,
+            Cidade varchar(25) not null,
+            Estado varchar(2)
+                       check (Estado IN ('RN', 'PB', 'CE', 'PE', 'BA', 'MA', 'AL', 'SE')),
+            CEP varchar(8) not null,
             IDPais int,
-
-            Email varchar\(50\)\)
-
-IF EXISTS \(SELECT name FROM sysobjects WHERE name = 'InserirCliente' AND Type= 'P'\)
-
+            Email varchar(50))
+IF EXISTS (SELECT name FROM sysobjects WHERE name = 'InserirCliente' AND Type= 'P')
             DROP PROC InserirCliente
-
 Go
-
 CREATE PROC InserirCliente
-
-            @ClienteID int, @Nome varchar\(35\), @SobreNome varchar\(15\),
-
-            @Endereco varchar\(50\), @Cidade varchar\(25\), @Estado varchar\(2\),
-
-            @CEP varchar\(8\), @IDPais int, @Email varchar\(50\)
-
+            @ClienteID int, @Nome varchar(35), @SobreNome varchar(15),
+            @Endereco varchar(50), @Cidade varchar(25), @Estado varchar(2),
+            @CEP varchar(8), @IDPais int, @Email varchar(50)
 AS
-
-            INSERT INTO Cliente \(ClienteID,Nome,SobreNome,Endereco,Cidade,
-
-            Estado,CEP,IdPais,Email\)
-
+            INSERT INTO Cliente (ClienteID,Nome,SobreNome,Endereco,Cidade,
+            Estado,CEP,IdPais,Email)
 VALUES 
-
-            \(@ClienteID,@Nome,@SobreNome,@Endereco,@Cidade,@Estado,
-
-            @CEP,@IDPais,@Email\)
-
+            (@ClienteID,@Nome,@SobreNome,@Endereco,@Cidade,@Estado,
+            @CEP,@IDPais,@Email)
 exec InserirCliente 1,'Larissa', 'Cunha','Rua José Ovídio Vale',
-
                        'Natal', 'RN', '59015410',55, '@sxp.com.br‘
-
 exec InserirCliente 2,'José Antônio', 'Cunha','Rua José Ovídio Vale',
-
                        'Natal', 'RN', '59015410',55, '@sxp.com.br'
-
 CREATE PROC AtualizarCliente
-
-            @ClienteID int, @Nome varchar\(35\), @SobreNome varchar\(15\),
-
-            @Endereco varchar\(50\), @Cidade varchar\(25\), @Estado varchar\(2\),
-
-            @CEP varchar\(8\), @IDPais int, @Email varchar\(50\)
-
+            @ClienteID int, @Nome varchar(35), @SobreNome varchar(15),
+            @Endereco varchar(50), @Cidade varchar(25), @Estado varchar(2),
+            @CEP varchar(8), @IDPais int, @Email varchar(50)
 AS
-
             UPDATE Cliente SET
-
             Nome = @Nome,
-
             SobreNome = @SobreNome,
-
             Endereco = @Endereco,
-
             Cidade = @Cidade,
-
             Estado = @Estado,
-
             CEP = @CEP,
-
             IdPais = @IdPais,
-
             Email = @Email
-
 WHERE           ClienteID = @ClienteID
+```
 
+```sql
 exec AtualizarCliente 1,'Larissa Medeiros', 'Cunha','Rua José Bernardo',  'caicó', 'RN', '59300000',55, '@sxp.com.br'
+```
+
+
 
 procedimento armazenado - ExcluirCliente
 
-IF EXISTS \(SELECT name FROM sysobjects WHERE name = 'ExcluirCliente' AND Type= 'P'\)
-
+```sql
+IF EXISTS (SELECT name FROM sysobjects WHERE name = 'ExcluirCliente' AND Type= 'P')
             DROP PROC ExcluirCliente
-
 Go
-
 CREATE PROC ExcluirCliente
-
             @ClienteID int
-
 AS
-
             DELETE FROM Cliente
-
                    WHERE ClienteID = @ClienteID
-
 EXEC ExcluirCliente 2
-
 procedimento armazenado - LocalizarCliente
-
-IF EXISTS \(SELECT name FROM sysobjects WHERE name = 'LocalizarCliente' AND Type= 'P'\)
-
+IF EXISTS (SELECT name FROM sysobjects WHERE name = 'LocalizarCliente' AND Type= 'P')
             DROP PROC LocalizarCliente
-
 Go
-
 CREATE PROC LocalizarCliente
-
             @ClienteID int
-
 AS
-
-            SELECT \* FROM Cliente
-
+            SELECT * FROM Cliente
                    WHERE ClienteID = @ClienteID
+```
 
+```sql
 exec LocalizarCliente 1
+```
 
-Chamando um procedimento armazenado
+#### Chamando um procedimento armazenado
 
+```java
 //Carrega o Drive
-
-Class.forName\(“sun.jdbc.odbc.JdbcOdbcDriver”\);
-
+Class.forName(“sun.jdbc.odbc.JdbcOdbcDriver”);
 ...
-
 //Conecta-se ao banco
-
-Connection con = DriverManager.getConnection\(“jdbc:odbc:Teste\_proc”,”sa”,””\);
-
+Connection con = DriverManager.getConnection(“jdbc:odbc:Teste_proc”,”sa”,””);
 //Cria e executa uma instrução
-
-CallableStatement cs = con.prepareCall\(“{call InserirCliente\(?,?,?,?,?,?,?,?,?\)}”\);
-
-cs.setInt\(1, pClienteId\);
-
-cs.setString\(2, pnome\).
-
+CallableStatement cs = con.prepareCall(“{call InserirCliente(?,?,?,?,?,?,?,?,?)}”);
+cs.setInt(1, pClienteId);
+cs.setString(2, pnome).
 ...
+cs.setString(9,pemail);
+cs.executeUpdate();
+cs.close();
+con.close();
+```
 
-cs.setString\(9,pemail\);
 
-cs.executeUpdate\(\);
 
-cs.close\(\);
+#### Chamando um procedimento armazenado
 
-con.close\(\);
-
-Chamando um procedimento armazenado
-
+```java
 //Carrega o Drive
-
-Class.forName\(“sun.jdbc.odbc.JdbcOdbcDriver”\);
-
+Class.forName(“sun.jdbc.odbc.JdbcOdbcDriver”);
 ...
-
 //Conecta-se ao banco
-
-Connection con = DriverManager.getConnection\(“jdbc:odbc:Teste\_proc”,”sa”,””\);
-
+Connection con = DriverManager.getConnection(“jdbc:odbc:Teste_proc”,”sa”,””);
 //Cria e executa uma instrução
-
-CallableStatement cs = con.prepareCall\(“{call LocalizarCliiente\(?,\)}”\);
-
-cs.setInt\(1, pClienteId\);
-
-ResultSet rs = cs.executeQuery\(\);
-
+CallableStatement cs = con.prepareCall(“{call LocalizarCliiente(?,)}”);
+cs.setInt(1, pClienteId);
+ResultSet rs = cs.executeQuery();
 ...
+cs.close();
+con.close();
+```
 
-cs.close\(\);
+#### Chamando um procedimento armazenado em C\#\#
 
-con.close\(\);
-
-Chamando um procedimento armazenado em C\#\#
-
-protected void Button1\_Click\(object sender, EventArgs e\)
-
+```csharp
+protected void Button1_Click(object sender, EventArgs e)
         {  
-
-            string aSQLProc = "SP\_CLIENTE\_FIXARPAIS";
-
-            string aSQLConecStr =  
+            string aSQLProc = "SP_CLIENTE_FIXARPAIS";
+            string aSQLConecStr =
  "Data Source=IFRNNB465;Initial Catalog=Ap02C;Persist Security Info=True;User ID=sa;Password=sa";
-
             // Abrindo a Conexão com o banco de dados
-
-            SqlConnection aSQLCon = new SqlConnection\(aSQLConecStr\);
-
-            aSQLCon.Open\(\);
-
+            SqlConnection aSQLCon = new SqlConnection(aSQLConecStr);
+            aSQLCon.Open();
             // Executando o comando
-
-            SqlCommand aSQL = new SqlCommand\(aSQLProc, aSQLCon\);
-
+            SqlCommand aSQL = new SqlCommand(aSQLProc, aSQLCon);
             aSQL.CommandType = CommandType.StoredProcedure;
-
-            aSQL.ExecuteNonQuery\(\);
-
+            aSQL.ExecuteNonQuery();
         }
+```
+
+
 
