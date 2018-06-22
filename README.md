@@ -1,8 +1,6 @@
 # Banco de Dados SQL
 
-Este livro foi escrito por Tell Moitas e pelos professores José Antônio e George Azevedo, com base no conteúdo da disciplina de Banco de Dados do curso graduação Tecnológica em Análise e desenvolvimento de Sistemas do IFRN - Instituto Federal do Rio Grande do Norte.
-
-Todo conteúdo é licenciado sobre a Creative Commons Attribution Non Commercial Share Alike 3.0 license. 
+Este livro foi escrito com base no conteúdo da disciplina de Banco de Dados ministrada pelos professores José Antônio e George Azevedo, do curso graduação Tecnológica em Análise e Desenvolvimento de Sistemas do IFRN - Instituto Federal do Rio Grande do Norte.
 
 _O código-fonte deste livro está em:_ [**https://github.com/tellmoitas/Banco-de-Dados-SQL**](https://github.com/tellmoitas/Banco-de-Dados-SQL)
 
