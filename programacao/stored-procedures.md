@@ -1,245 +1,6 @@
 # Stored Procedures
 
-  
-  
-&lt;!--  
- /\* Font Definitions \*/  
-@font-face  
-	{font-family:"Cambria Math";  
-	panose-1:2 4 5 3 5 4 6 3 2 4;  
-	mso-font-charset:1;  
-	mso-generic-font-family:roman;  
-	mso-font-format:other;  
-	mso-font-pitch:variable;  
-	mso-font-signature:0 0 0 0 0 0;}  
-@font-face  
-	{font-family:Calibri;  
-	panose-1:2 15 5 2 2 2 4 3 2 4;  
-	mso-font-charset:0;  
-	mso-generic-font-family:auto;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-536870145 1073786111 1 0 415 0;}  
- /\* Style Definitions \*/  
-p.MsoNormal, li.MsoNormal, div.MsoNormal  
-	{mso-style-unhide:no;  
-	mso-style-qformat:yes;  
-	mso-style-parent:"";  
-	margin:0cm;  
-	margin-bottom:.0001pt;  
-	mso-pagination:widow-orphan;  
-	font-size:12.0pt;  
-	font-family:Calibri;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:Calibri;  
-	mso-fareast-theme-font:minor-latin;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;  
-	mso-fareast-language:EN-US;}  
-.MsoChpDefault  
-	{mso-style-type:export-only;  
-	mso-default-props:yes;  
-	font-family:Calibri;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:Calibri;  
-	mso-fareast-theme-font:minor-latin;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;  
-	mso-fareast-language:EN-US;}  
-@page WordSection1  
-	{size:595.0pt 842.0pt;  
-	margin:70.85pt 3.0cm 70.85pt 3.0cm;  
-	mso-header-margin:35.4pt;  
-	mso-footer-margin:35.4pt;  
-	mso-paper-source:0;}  
-div.WordSection1  
-	{page:WordSection1;}  
- /\* List Definitions \*/  
-@list l0  
-	{mso-list-id:1149401071;  
-	mso-list-type:hybrid;  
-	mso-list-template-ids:-802904178 -1741769878 -1981365654 -513125252 -1977427528 581738184 201619668 -306837328 -1216947324 347140300;}  
-@list l1  
-	{mso-list-id:1415587402;  
-	mso-list-type:hybrid;  
-	mso-list-template-ids:1060151962 -1998018222 886998814 297826780 2004016204 -182031978 249335132 -1522381284 -520847276 -1202150440;}  
-@list l1:level1  
-	{mso-level-tab-stop:18.0pt;  
-	mso-level-number-position:left;  
-	margin-left:18.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level2  
-	{mso-level-tab-stop:54.0pt;  
-	mso-level-number-position:left;  
-	margin-left:54.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level3  
-	{mso-level-tab-stop:90.0pt;  
-	mso-level-number-position:left;  
-	margin-left:90.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level4  
-	{mso-level-tab-stop:126.0pt;  
-	mso-level-number-position:left;  
-	margin-left:126.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level5  
-	{mso-level-tab-stop:162.0pt;  
-	mso-level-number-position:left;  
-	margin-left:162.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level6  
-	{mso-level-tab-stop:198.0pt;  
-	mso-level-number-position:left;  
-	margin-left:198.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level7  
-	{mso-level-tab-stop:234.0pt;  
-	mso-level-number-position:left;  
-	margin-left:234.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level8  
-	{mso-level-tab-stop:270.0pt;  
-	mso-level-number-position:left;  
-	margin-left:270.0pt;  
-	text-indent:-18.0pt;}  
-@list l1:level9  
-	{mso-level-tab-stop:306.0pt;  
-	mso-level-number-position:left;  
-	margin-left:306.0pt;  
-	text-indent:-18.0pt;}  
-@list l2  
-	{mso-list-id:1887177513;  
-	mso-list-type:hybrid;  
-	mso-list-template-ids:-1210784670 302135114 1829115084 713714734 -1100318112 290343392 -2007732088 -1435050274 -1784480552 2138848722;}  
-@list l2:level1  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:36.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level2  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:72.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level3  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:108.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level4  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:144.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level5  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:180.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level6  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:216.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level7  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:252.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level8  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:288.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l2:level9  
-	{mso-level-number-format:bullet;  
-	mso-level-text:•;  
-	mso-level-tab-stop:324.0pt;  
-	mso-level-number-position:left;  
-	text-indent:-18.0pt;  
-	font-family:"Times New Roman";}  
-@list l3  
-	{mso-list-id:1929537491;  
-	mso-list-type:hybrid;  
-	mso-list-template-ids:-764763274 -1735519846 2123267070 1642483264 1972172554 -972270188 1759797782 1613795420 -1577812544 -1372135536;}  
-@list l3:level1  
-	{mso-level-start-at:2;  
-	mso-level-tab-stop:18.0pt;  
-	mso-level-number-position:left;  
-	margin-left:18.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level2  
-	{mso-level-tab-stop:54.0pt;  
-	mso-level-number-position:left;  
-	margin-left:54.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level3  
-	{mso-level-tab-stop:90.0pt;  
-	mso-level-number-position:left;  
-	margin-left:90.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level4  
-	{mso-level-tab-stop:126.0pt;  
-	mso-level-number-position:left;  
-	margin-left:126.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level5  
-	{mso-level-tab-stop:162.0pt;  
-	mso-level-number-position:left;  
-	margin-left:162.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level6  
-	{mso-level-tab-stop:198.0pt;  
-	mso-level-number-position:left;  
-	margin-left:198.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level7  
-	{mso-level-tab-stop:234.0pt;  
-	mso-level-number-position:left;  
-	margin-left:234.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level8  
-	{mso-level-tab-stop:270.0pt;  
-	mso-level-number-position:left;  
-	margin-left:270.0pt;  
-	text-indent:-18.0pt;}  
-@list l3:level9  
-	{mso-level-tab-stop:306.0pt;  
-	mso-level-number-position:left;  
-	margin-left:306.0pt;  
-	text-indent:-18.0pt;}  
-ol  
-	{margin-bottom:0cm;}  
-ul  
-	{margin-bottom:0cm;}  
---&gt;  
-
-
-Stored Procedures
-
-Um procedimento é um lote de instruções SQL que é armazenado em um banco de dados.
+Um procedimento é um lote de instruções SQL que é armazenado em um banco de dados.
 
 Um procedimento armazenado pode ser executada manualmente ou ser invocada por outros programas.
 
@@ -251,15 +12,13 @@ Apesar de retornar parâmetros de saída, as procedimento armazenado são difere
 
 Pode ser criada com o comando **CREATE PROCEDURE** e alterada com o comando **ALTER PROCEDURE**.
 
-CREATE PROC nome\_procedure; número
-
-    \[@parâmetros datatype \[= default \] \[INPUT/OUTPUT\]
-
-    \[WITH RECOMPILE / ENCRYPTION ...
-
-    \[FOR REPLICATION\]
-
-    AS instruções\_sql
+```text
+CREATE PROC nome_procedure; número
+    [@parâmetros datatype [= default ] [INPUT/OUTPUT]
+    [WITH RECOMPILE / ENCRYPTION ...
+    [FOR REPLICATION]
+    AS instruções_sql
+```
 
 É um número inteiro usado para agrupar procedimentos de mesmo nome, assim elas podem ser eliminadas juntas com um único comando **DROP**.
 
@@ -269,7 +28,9 @@ CREATE PROC nome\_procedure; número
 
 •       P\_AlterarSal;3
 
-DROP Procedure P\_AlterarSal
+```sql
+DROP Procedure P_AlterarSal
+```
 
 **Varying**
 
@@ -283,21 +44,19 @@ DROP Procedure P\_AlterarSal
 
 É um parâmetro que indica a procedure retornar um valor, sem utilizar o comando RETURN.
 
-CREATE PROCEDURE P\_Conta
+```sql
+CREATE PROCEDURE P_Conta
+@Num_1 int,
+@Num_2 int
+@Resposta bigint OUTPUT
+AS SET @Resposta = @Num_1 * @Num_2
+```
 
-@Num\_1 int,
-
-@Num\_2 int
-
-@Resposta bigint **OUTPUT**
-
-AS SET @Resposta = @Num\_1 \* @Num\_2
-
+```sql
 DECLARE @Resposta bigint
-
-EXEC P\_Conta 10,7, @Resposta OUTPUT
-
+EXEC P_Conta 10,7, @Resposta OUTPUT
 Print @Resposta
+```
 
 **With Recompile**
 
@@ -315,177 +74,125 @@ Especifica que a procedimento armazenado não pode ser executada no servidor Sub
 
 Tabela: Funcionario
 
-CREATE TABLE \[dbo\].\[Funcionario\]\(
+```sql
+CREATE TABLE [dbo].[Funcionario](
+            [Cod_Func] [int] NOT NULL,
+            [Nome_Func] [varchar](100) NULL,
+            [Sexo] [char](1) NULL,
+            [Salario] [float] NULL,
+            [Data_Ad] [datetime] NULL,
+            [Regiao] [int] NULL
+)
+```
 
-            \[Cod\_Func\] \[int\] NOT NULL,
+Inserindo dados na tabela
 
-            \[Nome\_Func\] \[varchar\]\(100\) NULL,
 
-            \[Sexo\] \[char\]\(1\) NULL,
 
-            \[Salario\] \[float\] NULL,
-
-            \[Data\_Ad\] \[datetime\] NULL,
-
-            \[Regiao\] \[int\] NULL
-
-\)
-
+```sql
 Insert into Funcionario
-
-Values\(1,'Manda Chuva','M',5000,'01/01/1998',1\)
-
+Values(1,'Manda Chuva','M',5000,'01/01/1998',1)
 Insert into Funcionario
-
-Values\(2,'Chuchu','M',3000,'01/01/1999',1\)
-
+Values(2,'Chuchu','M',3000,'01/01/1999',1)
 Insert into Funcionario
-
-Values\(3,'Bacana','M',2000,'10/10/2000',2\)
-
+Values(3,'Bacana','M',2000,'10/10/2000',2)
 Insert into Funcionario
-
-Values\(4,'Espeto','M',2500,'02/03/2001',2\)
-
+Values(4,'Espeto','M',2500,'02/03/2001',2)
 Insert into Funcionario
+Values(5,'Batatinha','F',4000,'05/06/2002',3)
+```
 
-Values\(5,'Batatinha','F',4000,'05/06/2002',3\)
-
-Exemplo 1: Sem parâmetro de entrada e sem retorno.
+#### Exemplo 1: Sem parâmetro de entrada e sem retorno.
 
 Some o salário de todos os funcionários. Se o valor ultrapassar 5000,00 aplique um aumento salarial de 5% para todos os funcionários; caso contrário, aplique um aumento de 10% para todos os funcionários.
 
-CREATE PROCEDURE P\_AlterarSal;1
-
+```sql
+CREATE PROCEDURE P_AlterarSal;1
 AS
-
-DECLARE @Percentual Decimal\(4,2\)
-
-IF \(SELECT SUM\(Salario\) FROM Funcionario \) &gt;= 5000.00
-
+DECLARE @Percentual Decimal(4,2)
+IF (SELECT SUM(Salario) FROM Funcionario ) >= 5000.00
     SET @Percentual = 1.05
-
 ELSE
-
     SET @Percentual = 1.10
+UPDATE Funcionario SET Salario = Salario * @Percentual
+EXECUTE P_AlterarSal;1
+```
 
-UPDATE Funcionario SET Salario = Salario \* @Percentual
-
-EXECUTE P\_AlterarSal;1
-
-Exemplo 2: com parâmetro de entrada.
+#### Exemplo 2: com parâmetro de entrada.
 
 O objetivo deste procedimento é aumentar o salário, no percentual recebido como parâmetro, do funcionário também recebido como parâmetro.
 
-CREATE PROCEDURE P\_AlterarSal;2
-
+```sql
+CREATE PROCEDURE P_AlterarSal;2
 @Codigo int,
-
-@Percentual decimal\(4,2\) = 1.0
-
+@Percentual decimal(4,2) = 1.0
 AS
+UPDATE Funcionario SET Salario = Salario * @Percentual
+            WHERE Cod_Func = @Codigo
+EXECUTE P_AlterarSal;2 1, 1.2
+EXECUTE P_AlterarSal;2 @Percentual=1.2, @Codigo = 1
+EXECUTE P_AlterarSal;2 1
+```
 
-UPDATE Funcionario SET Salario = Salario \* @Percentual
 
-            WHERE Cod\_Func = @Codigo
-
-EXECUTE P\_AlterarSal;2 1, 1.2
-
-EXECUTE P\_AlterarSal;2 @Percentual=1.2, @Codigo = 1
-
-EXECUTE P\_AlterarSal;2 1
 
 Este procedimento tem como objetivo aplicar um aumento salarial para o funcionário recebido como parâmetro e retornar para quem a executa o valor corrigido do salário. Haverá alteração salarial de acordo com o parâmetro @Percentual se o salário corrigido dessa pessoa for menor ou igual a 5000,00.
 
-CREATE PROCEDURE P\_AlterarSal;3
-
+```sql
+CREATE PROCEDURE P_AlterarSal;3
 @Codigo int = 0,
-
-@Percentual decimal\(4,2\) = 1.0
-
+@Percentual decimal(4,2) = 1.0
 AS
-
 IF @Percentual = 0 OR @Codigo = 0
-
-      RETURN\(0\)
-
-DECLARE @Salario decimal\(10,2\)
-
-SELECT @Salario = Salario \* @Percentual FROM Funcionario
-
-            WHERE Cod\_Func = @Codigo
-
-IF @Salario &lt;= 5000
-
+      RETURN(0)
+DECLARE @Salario decimal(10,2)
+SELECT @Salario = Salario * @Percentual FROM Funcionario
+            WHERE Cod_Func = @Codigo
+IF @Salario <= 5000
       UPDATE Funcionario Set Salario = @Salario
-
-                   WHERE Cod\_Func = @Codigo
-
-Return \(@Salario\)
-
+                   WHERE Cod_Func = @Codigo
+Return (@Salario)
 DECLARE @Var int
-
-EXEC @Var = P\_AlterarSal;3 2, 1.1
-
+EXEC @Var = P_AlterarSal;3 2, 1.1
 PRINT @Var
-
 DECLARE @Var int
-
-EXEC @Var = P\_AlterarSal;3
-
+EXEC @Var = P_AlterarSal;3
 PRINT @Var
+```
+
+
 
 Este procedimento tem como objetivo aplicar um aumento salarial para o funcionário recebido como parâmetro e retornar para quem a executa dados do funcionário e um flag que indica se houve alteração no salário ou não. Haverá alteração salarial de acordo com o parâmetro @Percentual se o salário atual dessa pessoa for menor ou igual a 5000,00
 
-CREATE PROCEDURE P\_AlterarSal;4
-
-@Codigo int, @Percentual decimal\(4,2\)=1.0,
-
-@Salario decimal\(10,2\) OUTPUT, @Sexo char\(01\)  OUTPUT,
-
+```sql
+CREATE PROCEDURE P_AlterarSal;4
+@Codigo int, @Percentual decimal(4,2)=1.0,
+@Salario decimal(10,2) OUTPUT, @Sexo char(01)  OUTPUT,
 @Regiao tinyint         OUTPUT,
-
 @Flag     tinyint          OUTPUT
-
 AS
-
-SELECT @Salario = Salario \* @Percentual, @Sexo = Sexo,  @Regiao = Regiao
-
-FROM Funcionario  WHERE Cod\_Func = @Codigo
-
-IF @Salario &lt;= 5000
-
+SELECT @Salario = Salario * @Percentual, @Sexo = Sexo,  @Regiao = Regiao
+FROM Funcionario  WHERE Cod_Func = @Codigo
+IF @Salario <= 5000
     BEGIN
-
             UPDATE Funcionario SET Salario = @Salario
-
-                         WHERE Cod\_Func = @Codigo
-
+                         WHERE Cod_Func = @Codigo
                          SET @Flag = 1
-
 END
-
 ElSE
-
                     SET @Flag = 0
-
-DECLARE @Sal decimal\(10,2\),
-
-              @Sex char\(01\),
-
+DECLARE @Sal decimal(10,2),
+              @Sex char(01),
               @Reg tinyint,
-
               @Sinal tinyint
-
-EXEC P\_AlterarSal;4 1, 1.2, @Sal OUTPUT,
-
+EXEC P_AlterarSal;4 1, 1.2, @Sal OUTPUT,
                                         @Sex OUTPUT,
-
                                         @Reg OUTPUT,
-
                                         @Sinal OUTPUT
-
 SELECT @Sex, @Reg, @Sinal, @Sal
+```
+
+
 
 **Raiserror\(\) -** Raiserror é um comando mais poderoso do que o PRINT para enviar mensagens.
 
@@ -493,15 +200,18 @@ Existem duas formas de utilizar este comando:
 
 Enviar uma mensagem avulsa para uma aplicação
 
-RAISERROR\( ‘Isto é uma mensagem avulsa’, 16, 1\)
+```text
+RAISERROR( ‘Isto é uma mensagem avulsa’, 16, 1)
+```
 
 Para enviar uma mensagem padronizada da tabela sysmessages para uma aplicação, existem duas possibilidades:
 
 1.     Enviar uma mensagem já existente na tabela do sistema sysmessages:
 
-RAISERROR\(13003, 16,1\)
-
-RAISERROR\(14027,16,1’Tab\_Teste’\)
+```sql
+RAISERROR(13003, 16,1)
+RAISERROR(14027,16,1’Tab_Teste’)
+```
 
 2.     Enviar uma mensagem colocada na tabela do sistema sysmessages pelo usuário. O primeiro passo é acrescentar esta mensagem à tabela sysmessages:
 
