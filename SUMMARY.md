@@ -4,10 +4,17 @@
 
 ## Banco de Dados
 
-* [Recursos de Programação](banco-de-dados/recursos-de-programacao.md)
-* [Stored Procedures](banco-de-dados/stored-procedures.md)
-* [Views](banco-de-dados/views.md)
-* [Triggers](banco-de-dados/triggers.md)
+* [Conceitos Básicos de Banco de Dados](banco-de-dados/recursos-de-programacao.md)
+* [Modelos de Dados](banco-de-dados/stored-procedures.md)
+  * [Modelo entidade-relacionamento](banco-de-dados/views.md)
+  * [Modelo relacional](banco-de-dados/views.md)
+  * [Álgebra relacional](banco-de-dados/views.md)
+* [Projeto de Banco de Dados ](banco-de-dados/views.md)
+  * [Fases do projeto de banco de dados](banco-de-dados/views.md)
+  * [Projeto lógico de bancos de dados relacionais](banco-de-dados/views.md)
+  * [Normalização](banco-de-dados/views.md)
+* [Linguagem de Definição de Dados](banco-de-dados/triggers.md)
+* [Linguagem de Consulta Estruturada](banco-de-dados/triggers.md)
 
 ## Programação de Banco de Dados
 
