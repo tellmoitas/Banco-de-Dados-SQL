@@ -1,8 +1,13 @@
-# Table of contents
 
-* [Banco de Dados SQL](README.md)
+* [Apresentação](README.md)
 
-## Programação
+## Banco de Dados
+* [Recursos de Programação](programacao/recursos-de-programacao.md)
+* [Stored Procedures](programacao/stored-procedures.md)
+* [Views](programacao/views.md)
+* [Triggers](programacao/triggers.md)
+
+## Programação de Banco de Dados
 
 * [Recursos de Programação](programacao/recursos-de-programacao.md)
 * [Stored Procedures](programacao/stored-procedures.md)
@@ -12,7 +17,7 @@
 * [Transações](programacao/transacoes.md)
 * [Cursores](programacao/cursores.md)
 
-## Adminstração
+## Adminstração de Banco de Dados
 
 * [Paginas e Extensões](adminstracao/paginas-e-extensoes.md)
 * [Filegroups](adminstracao/filegroups.md)
