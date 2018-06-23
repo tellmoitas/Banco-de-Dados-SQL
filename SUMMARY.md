@@ -20,6 +20,7 @@
 
 * [Recursos de Programação](programacao-de-banco-de-dados/recursos-de-programacao.md)
 * [Stored Procedures](programacao-de-banco-de-dados/stored-procedures.md)
+* [Exercícos - Stored Procedures](programacao-de-banco-de-dados/ex-sp.md)
 * [Views](programacao-de-banco-de-dados/views.md)
 * [Triggers](programacao-de-banco-de-dados/triggers.md)
 * [Funções](programacao-de-banco-de-dados/funcoes.md)
