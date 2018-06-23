@@ -1,4 +1,4 @@
-# Table of contents
+# Sumário
 
 * [Apresentação](README.md)
 
@@ -6,7 +6,7 @@
 
 * [Conceitos Básicos de Banco de Dados](banco-de-dados/em-breve.md)
 * [Modelos de Dados](banco-de-dados/em-breve.md)
-  * [Modelo entidade-relacionamento](banco-de-dados/em-breve.md
+  * [Modelo entidade-relacionamento](banco-de-dados/em-breve.md)
   * [Modelo relacional](banco-de-dados/em-breve.md)
   * [Álgebra relacional](banco-de-dados/em-breve.md)
 * [Projeto de Banco de Dados ](banco-de-dados/em-breve.md)
