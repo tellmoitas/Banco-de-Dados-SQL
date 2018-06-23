@@ -4,7 +4,7 @@
 
 ## Banco de Dados
 
-[comment]: <> * [Conceitos Básicos de Banco de Dados)(banco-de-dados/conceitos-basicos-de-banco-de-dados.md)
+[](Comment * [Conceitos Básicos de Banco de Dados)(banco-de-dados/conceitos-basicos-de-banco-de-dados.md))
 * [Modelos de Dados](banco-de-dados/modelos-de-dados/README.md)
   * [Modelo entidade-relacionamento](banco-de-dados/modelos-de-dados/modelo-entidade-relacionamento.md)
   * [Modelo relacional](banco-de-dados/modelos-de-dados/modelo-relacional.md)
