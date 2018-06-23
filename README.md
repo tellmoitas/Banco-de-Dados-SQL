@@ -1,4 +1,4 @@
-# Banco de Dados SQL
+# Apresentação
 
 Este livro foi escrito com base no conteúdo da disciplina de Banco de Dados ministrada pelos professores José Antônio e George Azevedo, do curso graduação Tecnológica em Análise e Desenvolvimento de Sistemas do IFRN - Instituto Federal do Rio Grande do Norte.
 
