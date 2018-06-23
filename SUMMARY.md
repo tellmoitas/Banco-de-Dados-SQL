@@ -4,7 +4,7 @@
 
 ## Banco de Dados
 
-* [Conceitos Básicos de Banco de Dados](banco-de-dados/em-breve.md)
+* [Conceitos Básicos de Banco de Dados]()
 * [Modelos de Dados](banco-de-dados/em-breve.md)
   * [Modelo entidade-relacionamento](banco-de-dados/em-breve.md)
   * [Modelo relacional](banco-de-dados/em-breve.md)
