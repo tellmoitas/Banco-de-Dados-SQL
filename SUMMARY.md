@@ -4,7 +4,8 @@
 
 ## Banco de Dados
 
-[](Comment * [Conceitos Básicos de Banco de Dados)(banco-de-dados/conceitos-basicos-de-banco-de-dados.md))
+
+* [Conceitos Básicos de Banco de Dados)(banco-de-dados/conceitos-basicos-de-banco-de-dados.md)
 * [Modelos de Dados](banco-de-dados/modelos-de-dados/README.md)
   * [Modelo entidade-relacionamento](banco-de-dados/modelos-de-dados/modelo-entidade-relacionamento.md)
   * [Modelo relacional](banco-de-dados/modelos-de-dados/modelo-relacional.md)
@@ -15,6 +16,7 @@
   * [Normalização](banco-de-dados/projeto-de-banco-de-dados/normalizacao.md)
 * [Linguagem de Definição de Dados](banco-de-dados/linguagem-de-definicao-de-dados.md)
 * [Linguagem de Consulta Estruturada](banco-de-dados/linguagem-de-consulta-estruturada.md)
+
 
 ## Programação de Banco de Dados
 
