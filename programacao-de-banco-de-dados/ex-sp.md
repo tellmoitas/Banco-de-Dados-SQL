@@ -1,4 +1,4 @@
-## Usando o banco de dados exemplo “Pubs” respondas as questões abaixo.
+# Usando o banco de dados exemplo “Pubs” respondas as questões abaixo.
 
 1.	Escreva um comando que exiba o código do livro, o título do livro e o nome do autor, por ordem crescente de titulo do livro e nome de autor.
 2.	Escreva um comando que exiba o código do livro, o título do livro e a quantidade de autores do livro, ordenando por título do livro.
