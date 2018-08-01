@@ -15,7 +15,6 @@
 * [Linguagem de Consulta Estruturada](banco-de-dados/linguagem-de-consulta-estruturada.md)
 ---!>
 
-
 ## Programação de Banco de Dados
 
 * [Recursos de Programação](programacao-de-banco-de-dados/recursos-de-programacao.md)
