@@ -1,3 +1,14 @@
+# Programação de Banco de Dados
+
+* [Recursos de Programação](programacao-de-banco-de-dados/recursos-de-programacao.md)
+* [Stored Procedures](programacao-de-banco-de-dados/stored-procedures.md)
+* [Exercícos](programacao-de-banco-de-dados/exercicos-stored-procedures.md)
+* [Views](programacao-de-banco-de-dados/views.md)
+* [Triggers](programacao-de-banco-de-dados/triggers.md)
+* [Funções](programacao-de-banco-de-dados/funcoes.md)
+* [Transações](programacao-de-banco-de-dados/transacoes.md)
+* [Cursores](programacao-de-banco-de-dados/cursores.md)
+
 <!---
 # Banco de Dados SQL
 * [Apresentação](README.md)
@@ -14,18 +25,6 @@
 * [Linguagem de Definição de Dados](banco-de-dados/linguagem-de-definicao-de-dados.md)
 * [Linguagem de Consulta Estruturada](banco-de-dados/linguagem-de-consulta-estruturada.md)
 ---!>
-
-## Programação de Banco de Dados
-
-* [Recursos de Programação](programacao-de-banco-de-dados/recursos-de-programacao.md)
-* [Stored Procedures](programacao-de-banco-de-dados/stored-procedures.md)
-* [Exercícos](programacao-de-banco-de-dados/exercicos-stored-procedures.md)
-* [Views](programacao-de-banco-de-dados/views.md)
-* [Triggers](programacao-de-banco-de-dados/triggers.md)
-* [Funções](programacao-de-banco-de-dados/funcoes.md)
-* [Transações](programacao-de-banco-de-dados/transacoes.md)
-* [Cursores](programacao-de-banco-de-dados/cursores.md)
-
 <!---
 ## Adminstração de Banco de Dados
 * [Paginas e Extensões](adminstracao-de-banco-de-dados/paginas-e-extensoes.md)
