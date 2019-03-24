@@ -6,13 +6,12 @@ _O código-fonte deste livro está em:_ [**https://github.com/tellmoitas/Banco-d
 
 ![](.gitbook/assets/capa_amazon.PNG)
 
-O livro "Programação de Banco de Dados: Conteúdo didático"
 
 (**ASIN**: B07DWCK47B\)
 
 ( **ISBN:** 9781091375901\)
 
-Está disponível na Loja Kindle_ [_**aqui**_](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660).
+Está disponível na Amazon: [_**Compre aqui**_](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660).
 
 ## José Antônio
 
