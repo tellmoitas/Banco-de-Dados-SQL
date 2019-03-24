@@ -6,9 +6,13 @@ _O código-fonte deste livro está em:_ [**https://github.com/tellmoitas/Banco-d
 
 ![](.gitbook/assets/capa_amazon.PNG)
 
-O livro "Banco de Dados SQL" \(**ASIN**: B07DWCK47B\) está disponível _para pré-venda na Loja Kindle_ [_**aqui**_](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660).
+O livro "Programação de Banco de Dados: Conteúdo didático"
 
-O livro impresso \( **ISBN:** 9781983225031\), estará disponível em breve.
+(**ASIN**: B07DWCK47B\)
+
+( **ISBN:** 9781091375901\)
+
+Está disponível na Loja Kindle_ [_**aqui**_](https://www.amazon.com.br/dp/B07DWCK47B?ref_=pe_2427780_160035660).
 
 ## José Antônio
 
